@@ -1,5 +1,7 @@
-#!/bin/zsh 
-
+#!/bin/zsh
+#git remote show origin
+#git remote set-url origin <url>
+#git remote set-url --push origin <url>
 LOCATION=$(az group show --name 'NetworkWatcherRG' --query location --out tsv)
 RGNAME='NetworkWatcherRG'
 az group create --name $RGNAME --location $LOCATION
